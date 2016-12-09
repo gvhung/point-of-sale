@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F86F811B-EB25-44CB-A91E-781892E3E0BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PointOfSale</RootNamespace>
+    <AssemblyName>PointOfSale</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesomeIcons">
+      <HintPath>C:\Users\abi\Documents\EagleGet Downloads\FontAwesome-WindowsForms-master\FontAwesome-WindowsForms-master\WinFormsTest\bin\Debug\FontAwesomeIcons.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\RAS Attendence System\RAS Attendence System\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\RAS Attendence System\RAS Attendence System\bin\Debug\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\RAS Attendence System\RAS Attendence System\bin\Debug\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.Ribbon35">
+      <HintPath>C:\Users\abi\Documents\EagleGet Downloads\Binaries\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\InvoiceBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\InvoiceBox.Designer.cs">
+      <DependentUpon>InvoiceBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\WorkerFormBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\WorkerFormBox.Designer.cs">
+      <DependentUpon>WorkerFormBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\WorkerBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\WorkerBox.Designer.cs">
+      <DependentUpon>WorkerBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ListViewItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ListViewItem.Designer.cs">
+      <DependentUpon>ListViewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ListViewItemFooter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ListViewItemFooter.Designer.cs">
+      <DependentUpon>ListViewItemFooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ListViewItemHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ListViewItemHeader.Designer.cs">
+      <DependentUpon>ListViewItemHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\MainMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ReciptBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ReciptBox.Designer.cs">
+      <DependentUpon>ReciptBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ReportBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ReportBox.Designer.cs">
+      <DependentUpon>ReportBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ServiceBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ServiceBox.Designer.cs">
+      <DependentUpon>ServiceBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\UserMainMenuBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\UserMainMenuBox.Designer.cs">
+      <DependentUpon>UserMainMenuBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ViewBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Assets\ViewBox.Designer.cs">
+      <DependentUpon>ViewBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants\ServiceObject.cs" />
+    <Compile Include="Constants\WorkerObject.cs" />
+    <Compile Include="Controller\AuthenticationController.cs" />
+    <Compile Include="Controller\OrderController.cs" />
+    <Compile Include="Controller\ServiceController.cs" />
+    <Compile Include="Controller\WindowsStateHelper.cs" />
+    <Compile Include="Controller\WorkerController.cs" />
+    <Compile Include="Data_Set\POS.cs">
+      <DependentUpon>POS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Set\POS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Set\Report.cs">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Set\Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CountHelper.cs" />
+    <Compile Include="Helpers\DBNullHelper.cs" />
+    <Compile Include="Helpers\DSHelper.cs" />
+    <Compile Include="Helpers\DSParser.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\ObjectHelper.cs" />
+    <Compile Include="Helpers\WindowStateHelper.cs" />
+    <Compile Include="Model\Global.cs" />
+    <Compile Include="Model\ModelService.cs" />
+    <Compile Include="Model\ModelOrder.cs" />
+    <Compile Include="Model\ModelWorker.cs" />
+    <Compile Include="View\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="View\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\DBController.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\FrmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmInvoice.Designer.cs">
+      <DependentUpon>FrmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginBox.Designer.cs">
+      <DependentUpon>LoginBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Assets\InvoiceBox.resx">
+      <DependentUpon>InvoiceBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WorkerFormBox.resx">
+      <DependentUpon>WorkerFormBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\WorkerBox.resx">
+      <DependentUpon>WorkerBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ListViewItem.resx">
+      <DependentUpon>ListViewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ListViewItemFooter.resx">
+      <DependentUpon>ListViewItemFooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ListViewItemHeader.resx">
+      <DependentUpon>ListViewItemHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ReciptBox.resx">
+      <DependentUpon>ReciptBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ReportBox.resx">
+      <DependentUpon>ReportBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ServiceBox.resx">
+      <DependentUpon>ServiceBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\UserMainMenuBox.resx">
+      <DependentUpon>UserMainMenuBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\ViewBox.resx">
+      <DependentUpon>ViewBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Invoice.rdlc" />
+    <EmbeddedResource Include="Reports\ReportFinal.rdlc" />
+    <EmbeddedResource Include="View\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\FrmInvoice.resx">
+      <DependentUpon>FrmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginBox.resx">
+      <DependentUpon>LoginBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data_Set\POS.xsc">
+      <DependentUpon>POS.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set\POS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>POS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data_Set\POS.xss">
+      <DependentUpon>POS.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set\Report.xsc">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Set\Report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Report.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data_Set\Report.xss">
+      <DependentUpon>Report.xsd</DependentUpon>
+    </None>
+    <None Include="Fonts\fontawesome-webfont.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\921511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat_seo2-32-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hair__Beauty_Salon-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footer-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\pos.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\pos_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
